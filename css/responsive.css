@@ -1,0 +1,284 @@
+/* Responsive */
+@media(max-width: 1199px){
+    /* body{
+       width: 100%;
+    } */
+    #date{
+        display: none;
+    }
+}
+@media(max-width: 991px){
+    .header .nav-top{
+        padding: 1.4rem 2rem !important;
+    }
+    .header .nav-top .header-logo a {
+        width: 90%;
+    }
+    .header-backdrop,
+    .header-close-btn,
+    .header-humburger-btn {
+        display: block !important;
+    }
+    .header-humburger-btn{
+        height: 34px;
+        width: 40px;
+        border: 0;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    .header-humburger-btn span{
+        display: block;
+        height: 2px;
+        width: 24px;
+        background-color: var(--white);
+        position: relative;
+        margin: auto;
+    }
+    .header-humburger-btn span::before,
+    .header-humburger-btn span::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--white);
+    }
+    .header-humburger-btn span::before{
+        top: -7px;
+    }
+    .header-humburger-btn span::after{
+        top: 7px;
+    }
+    .header-close-btn{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        background-color: var(--main-color);
+        left: 15px;
+        top: 15px;
+        color: var(--white);
+        border: 0;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .header-menu{
+        position: fixed;
+        width: 300px;
+        height: 100vh;
+        top: 0;
+        right: -300px;
+        z-index: 1000;
+        padding: 70px 0 50px;
+        transition: all 0.5s ease;
+        background-color: var(--white);
+        color: #000;
+        box-shadow: var(--shadow);
+        overflow-y: hidden;
+        visibility: hidden;
+    }
+    
+    .header-menu.open{
+        right: 0;
+        visibility: visible;
+    }
+    .header .menu-item {
+        display: block;
+        margin: 0;
+    }
+    .header .nav-top .ul-left .menu-item .nav-link{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px ;
+        border-bottom: 1px solid var(--main-color);
+        color: #000 !important;
+
+    }
+    .header .menu-item:first-child > a{
+        border-top: 1px solid var(--main-color);
+
+    }
+    .header .menu-item.active > a i {
+        transform: rotate(-180deg);
+    }
+    .header .sub-menu{
+        position: relative;
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: none;
+        transform: translateY(0);
+        top: auto;
+        padding: 0;
+        border-radius: 0;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .header .menu {
+        display: flex !important;
+        flex-direction: column;
+        padding-top: 22px;
+    }
+    .header .sub-menu-item {
+        padding: 12px 45px;
+        border-bottom: 1px solid var(--border-color-1);
+    }
+    .header-backdrop {
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all .5s ease;
+        visibility: hidden;
+        background-color: var(--white);
+    }
+    .header-backdrop.active{
+        visibility: visible;
+        opacity: 0.8;
+    }
+    /* date section */
+    #date{
+        display: none;
+    }
+    /* about section */
+
+
+}
+@media(max-width: 867px){
+   
+
+}
+@media(max-width: 767px){
+    html {
+        width: auto;
+     }
+    .container{
+        --bs-gutter-x: 15px;
+    }
+    .about .ctz{
+        display: grid !important;
+    }
+    .box{
+        padding: 20px 15px;
+    }
+    .date .group {
+        display: flex;
+        padding: 0 75px;
+        flex-wrap: wrap;
+    }
+    #date{
+        display: none;
+    }
+    
+
+}
+@media(max-width: 575px){
+    html {
+        width: auto;
+     }
+    .header .nav-top .header-logo a {
+        width: 80%;
+    }
+    #date{
+        display: none;
+    }
+    /* about */
+    .about  .about-right p {
+        font-size: 12px;
+        text-align: center;
+    }
+    /* services */
+    .services .services-content .services-content-Square .services-content-text {
+        padding-right: 0 !important;
+    }
+    .services .services-content .services-content-Square .services-content-text h5{
+        font-size: 11px;
+        margin-bottom: 0;
+    }
+    .services .services-content .services-content-Square .services-content-text p{
+        font-size: 9px;
+        font-weight: 300;
+    }
+    /* suites */
+    .sui {
+        padding: 20px 0;
+        width: 50%;
+        margin: auto;
+    }
+    .lead{
+        font-size: 10px;
+    }
+    .copyright-area {
+        display: grid;
+     }
+    
+}
+@media(max-width: 375px){
+    html {
+       width: auto;
+    }
+    .header .nav-top .header-logo a {
+        width: 80%;
+    }
+    .home .view-img {
+        margin-top: 20% !important;
+    }
+    .home .view-img .view{
+        width: 90px !important;
+    }
+    .home .view-img .str{
+        width: 80px !important;
+        margin-top: 10px !important;
+    }
+    .footer-item{
+        text-align: center;
+    }
+    #date{
+        display: none;
+    }
+    .suites {
+        overflow-x: hidden;
+    }
+    .copyright-area {
+       display: grid;
+    }
+    .footer-widget ul li a , span{
+        font-size: 12px;
+      }
+      .footer-widget  span{
+        font-size: 10px;
+      }
+      .contact form {
+        width: 100% !important;
+    }
+    .subscribe-form input {
+        padding: 10px 5px !important;
+    }
+    .subscribe-form button {
+        padding: 10px !important;
+    }
+    .form-outline .form-control~.form-label {
+        font-size: 12px;
+    }
+    .contact form .btn {
+        font-size: 12px;
+    }
+    .form-control {
+        padding: 0;
+    }
+    .swiper {
+        width: 815px;
+        transform: translate(2%, 50%);
+    }
+    .header-menu{
+        width: 250px;
+    }
+    .header-close-btn{
+        height: 30px;
+        width: 30px;
+    }
+    
+}
